@@ -78,7 +78,7 @@ def grabSS(proxy):
 			#converts phantomjs cookies into firefox webdriver to check out
 
 		except Exception as exp:
-			print exp
+			print (exp)
 if __name__ == "__main__":
 	SPLASHTITLE = grabCurrentTitle(URL)
 	threads = [threading.Thread(target=grabSS, args=(proxy,)) for proxy in PROXIES]
