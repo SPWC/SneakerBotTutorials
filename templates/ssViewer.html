@@ -1,0 +1,29 @@
+<div class="panel panel-primary">
+<div class="panel-heading">
+    <i class="fa fa-bar-chart-o fa-fw"></i> Driver Screenshots
+    <div class="pull-right">
+    </div>
+</div>
+
+<div class="panel-body">
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="table-responsive">
+                <table class="table table-bordered table-hover table-striped">
+                    <tbody>
+                        <tr>
+                        {% for proxy in allProxies %}
+                            <td><img src="/static/{{ proxy }}.png" width="80" height="120"></td>
+                        {% endfor %}
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+
+    </div>
+    <!-- /.row -->
+</div>
+<!-- /.panel-body -->
+</div>
