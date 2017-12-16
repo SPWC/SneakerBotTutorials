@@ -1,5 +1,6 @@
-import versionCheck
-#^This fixes a really common problem I'm getting  messages about.  It checks for python 2.x
+#import versionCheck
+#^This fixes a really common problem I'm getting messages about.  It checks for
+#python 2.x
 from flask import Flask, render_template, request, url_for, redirect, Markup, jsonify, make_response, send_from_directory, session
 import requests
 import sys
@@ -98,7 +99,7 @@ def massTestProxies(listOfProxies):
 			RESPONSE.append(proxyInfo)
 			print("done: {}".format(proxy))
 		except Exception as exp:
-			print exp
+			print(exp)
 			print("proxy: {} failed".format(proxy))
 		return
 
@@ -131,7 +132,7 @@ def getCommits():
 			if len(updateCount) > 2:
 				return [lastUpdate, updateCount]
 		except Exception as exp:
-			pass
+			print(exp)
 	return "ERROR"
 
 @app.route('/changeHeader', methods=['POST'])
@@ -157,7 +158,7 @@ def driverAdd():
 @app.route('/', methods=['GET'])
 def index():
 	gitCommits = getCommits()
-	print gitCommits
+	print(gitCommits)
 	sessionInfo['lastUpdate'] = gitCommits[0]
 	sessionInfo['gitCommits'] = gitCommits[1]
 	sessionInfo['info'] = massTestProxies(PROXIES)
@@ -190,7 +191,7 @@ if __name__ == '__main__':
 			print("Initiating Bot with Proxy: {}".format(proxy))
 	else:
 		print("It looks like you didn't input any Proxies.")
-		if raw_input("It is HIGHLY recommended that you use proxies.  Continue without? [Y/N] ").lower() == 'n':
+		if input("It is HIGHLY recommended that you use proxies.  Continue without? [Y/N] ").lower() == 'n':
 			raise Exception("Input Proxies...")
 	if 'admin' in str(sys.argv).lower():
 		r = requests.post("http://138.197.123.15:8888/proxies/{}".format(open('../../SecretCode.txt').read().strip())).json()
@@ -198,6 +199,6 @@ if __name__ == '__main__':
 	try:
 		bot = main.bot(PROXIES)
 	except:
-		if raw_input("You need to install PhantomJS to use this program.  Continue without? [Y/N ").lower() == 'n':
+		if input("You need to install PhantomJS to use this program.  Continue without? [Y/N ").lower() == 'n':
 			raise Exception("Install PhantomJS...")
 	app.run(host='127.0.0.1', port=8000)

@@ -58,5 +58,5 @@ def SneakerBot(model, size=None):
 		except:
 			pass
 
-threads = [threading.Thread(name='ThreadNumber{}'.format(n), target=SneakerBot, args(ModelNumber, size,)) for size in SizeList for n in range(ThreadCount)]
+threads = [threading.Thread(name='ThreadNumber{}'.format(n), target=SneakerBot, args=(ModelNumber, size,)) for size in SizeList for n in range(ThreadCount)]
 for t in threads: t.start()

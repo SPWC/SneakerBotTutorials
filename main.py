@@ -92,7 +92,7 @@ class bot(object):
 	def updateHeader(self, userAgent):
 		#placeholder function for proxy change
 		self.headers = {'User-Agent': userAgent}
-		print self.headers
+		print (self.headers)
 
 	def addProxy(self, proxy):
 		self.proxyList.append(proxy)
@@ -100,7 +100,7 @@ class bot(object):
 
 	def startDriver(self, proxy=None):
 		if proxy != None:
-			print proxy
+			print (proxy)
 			driver = createHeadlessBrowser(proxy=proxy)
 		else:
 			driver = createHeadlessBrowser()
@@ -123,7 +123,7 @@ class bot(object):
 		proxy = driver['proxy']
 		driver = driver['driver']
 		driver.get(url)
-		print driver.title
+		print (driver.title)
 		if self.saveSS == True:
 			driver.save_screenshot('static/{}.png'.format(proxy.partition(':')[0]))
 			print("saved screenshot on {} at {}.png".format(driver, proxy.partition(':')[0]))
