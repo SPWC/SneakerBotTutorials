@@ -1,0 +1,120 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{585297a3-a5fa-42cf-8d3a-c8a02b1a2aa4}</ProjectGuid>
+    <ProjectHome />
+    <StartupFile>app.py</StartupFile>
+    <SearchPath />
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <ProjectTypeGuids>{888888a0-9f3d-457c-b088-3a5042f75d52}</ProjectTypeGuids>
+    <LaunchProvider>Standard Python launcher</LaunchProvider>
+    <InterpreterId />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition=" '$(VisualStudioVersion)' == '' ">10.0</VisualStudioVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="LICENSE.txt" />
+    <Content Include="requirements.txt" />
+    <Content Include="static\103.12.160.61.png" />
+    <Content Include="static\139.59.169.81.png" />
+    <Content Include="static\139.59.243.186.png" />
+    <Content Include="static\186.215.148.228.png" />
+    <Content Include="static\45.32.51.175.png" />
+    <Content Include="static\46.101.47.58.png" />
+    <Content Include="static\46.101.53.211.png" />
+    <Content Include="static\47.52.62.110.png" />
+    <Content Include="static\69.27.184.131.png" />
+    <Content Include="static\92.38.47.239.png" />
+    <Content Include="static\css\main-style.css" />
+    <Content Include="static\css\style.css" />
+    <Content Include="static\font-awesome\css\font-awesome.css" />
+    <Content Include="static\font-awesome\css\font-awesome.min.css" />
+    <Content Include="static\font-awesome\fonts\fontawesome-webfont.svg" />
+    <Content Include="static\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="static\img\logo.png" />
+    <Content Include="static\img\user.jpg" />
+    <Content Include="static\plugins\bootstrap\bootstrap.css" />
+    <Content Include="static\plugins\bootstrap\bootstrap.js" />
+    <Content Include="static\plugins\bootstrap\bootstrap.min.js" />
+    <Content Include="static\plugins\dataTables\dataTables.bootstrap.css" />
+    <Content Include="static\plugins\dataTables\dataTables.bootstrap.js" />
+    <Content Include="static\plugins\dataTables\jquery.dataTables.js" />
+    <Content Include="static\plugins\flot\excanvas.min.js" />
+    <Content Include="static\plugins\flot\jquery.flot.js" />
+    <Content Include="static\plugins\flot\jquery.flot.pie.js" />
+    <Content Include="static\plugins\flot\jquery.flot.resize.js" />
+    <Content Include="static\plugins\flot\jquery.flot.tooltip.min.js" />
+    <Content Include="static\plugins\jquery-1.10.2.js" />
+    <Content Include="static\plugins\metisMenu\jquery.metisMenu.js" />
+    <Content Include="static\plugins\morris\morris-0.4.3.min.css" />
+    <Content Include="static\plugins\morris\morris.js" />
+    <Content Include="static\plugins\morris\raphael-2.1.0.min.js" />
+    <Content Include="static\plugins\pace\pace-theme-big-counter.css" />
+    <Content Include="static\plugins\pace\pace.js" />
+    <Content Include="static\plugins\social-buttons\social-buttons.css" />
+    <Content Include="static\plugins\timeline\timeline.css" />
+    <Content Include="static\proxy1.png" />
+    <Content Include="static\proxy2.png" />
+    <Content Include="static\scripts\dashboard-demo.js" />
+    <Content Include="static\scripts\flot-demo.js" />
+    <Content Include="static\scripts\morris-demo.js" />
+    <Content Include="static\scripts\siminta.js" />
+    <Content Include="static\yeezy.jpg" />
+    <Content Include="templates\areaChart.html" />
+    <Content Include="templates\chatPanel.html" />
+    <Content Include="templates\dataUpload.html" />
+    <Content Include="templates\diffWarning.html" />
+    <Content Include="templates\donutPanel.html" />
+    <Content Include="templates\driverInfo.html" />
+    <Content Include="templates\gitClones.html" />
+    <Content Include="templates\gitCommits.html" />
+    <Content Include="templates\index.html" />
+    <Content Include="templates\notificationPanel.html" />
+    <Content Include="templates\simpleTable.html" />
+    <Content Include="templates\ssViewer.html" />
+    <Content Include="templates\timeWarning.html" />
+    <Content Include="templates\topBar.html" />
+    <Content Include="templates\updateHeaders.html" />
+    <Content Include="templates\urlGen.html" />
+    <Content Include="templates\urlGoTo.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="app.py" />
+    <Compile Include="main.py" />
+    <Compile Include="oldBot\Part1.py" />
+    <Compile Include="oldBot\Part2.py" />
+    <Compile Include="oldBot\Part3.py" />
+    <Compile Include="proxy_tests.py" />
+    <Compile Include="RandomHeaders.py" />
+    <Compile Include="testingCookies.py" />
+    <Compile Include="versionCheck.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="oldBot" />
+    <Folder Include="static" />
+    <Folder Include="static\css" />
+    <Folder Include="static\font-awesome\" />
+    <Folder Include="static\font-awesome\css" />
+    <Folder Include="static\font-awesome\fonts" />
+    <Folder Include="static\fonts" />
+    <Folder Include="static\img" />
+    <Folder Include="static\plugins" />
+    <Folder Include="static\plugins\bootstrap" />
+    <Folder Include="static\plugins\dataTables" />
+    <Folder Include="static\plugins\flot" />
+    <Folder Include="static\plugins\metisMenu" />
+    <Folder Include="static\plugins\morris" />
+    <Folder Include="static\plugins\pace" />
+    <Folder Include="static\plugins\social-buttons" />
+    <Folder Include="static\plugins\timeline" />
+    <Folder Include="static\scripts" />
+    <Folder Include="templates" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
+</Project>
